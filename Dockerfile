@@ -5,6 +5,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     ca-certificates \
+    build-essential \
+    debhelper-compat \
+    cpio \
+    kmod \
+    libelf-dev:native \
+    rsync \
     bc \
     bison \
     flex \
